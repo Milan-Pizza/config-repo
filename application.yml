@@ -4,6 +4,16 @@ spring:
       resourceserver:
         jwt:
           issuer-uri: http://localhost:8080/realms/cloud-kitchen
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        enabled: true
+        register: true
+        prefer-ip-address: true
+        health-check-path: /actuator/health
+        health-check-interval: 10s
 
 management:
   endpoints:
