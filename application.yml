@@ -31,6 +31,6 @@ management:
     propagation:
       type: w3c
 
-logging:
-  level:
-    root: debug
+# logging:
+#   level:
+#     root: info
